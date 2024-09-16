@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Leituras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Minhas Leituras</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="navs-item fw-bold">
+                        <a href="#mais-recente" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Mais recente</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Destaques</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#categorias" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Categorias</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-comigo" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale comigo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="mais-recente">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block mx-auto" src="images/slides/slide_1_fundacao.jpg" alt="Foto dos livros de fundação">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block mx-auto" src="images/slides/slide_2_tolkien.jpg" alt="Foto dos livros de senhor dos aneis">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block mx-auto" src="images/slides/slide_3_estante_de_livros.jpg" alt="estante de livros">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/livros/por_que_nos_dormimos.jpg" alt="Foto do livro por que nós dormimos" class="d-block w-100 rounded"/>
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Por Que Nós Dormimos – <span class="text-colored">Matthew Walker</span></h2>
+                            <p>
+                                Por Que Nós Dormimos explora os mistérios do sono e sua importância para nossa saúde física e mental. Matthew Walker, um renomado neurocientista e especialista no estudo do sono, revela como esse estado é essencial para a nossa sobrevivência, produtividade e longevidade.
+                            </p>
+                            <h3 class="section-title">Um pouco mais <span class="text-colored">sobre</span></h3>
+                            <p>
+                                O livro é dividido em várias seções que abordam tanto os benefícios do sono quanto as consequências devastadoras da privação de descanso. Walker utiliza evidências científicas para desmistificar crenças populares sobre sono e mostra como a qualidade do descanso afeta diretamente nossa capacidade de pensar, criar e viver bem.
+                            </p>
+                            <ul>
+                                <li>Explicação detalhada sobre os ciclos do sono (REM e não-REM).</li>
+                                <li>A relação entre o sono e o aprendizado, memória e criatividade.</li>
+                                <li>Impactos da privação de sono na saúde e bem-estar a longo prazo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destaques" class="pt-5 pb-5" >
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center ">Livros <span class="text-colored">em destaque</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/livros/codigo_limpo.jpg" alt=""  class="db-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Código Limpo – Robert C. Martin
+                        </h3>
+                        <p>
+                            Este livro é um guia prático sobre como escrever código de qualidade. Ele se destaca pela aplicação de princípios sólidos que desenvolvedores podem seguir para criar software limpo, legível e sustentável. O impacto desse livro na indústria de desenvolvimento é inegável, sendo uma leitura essencial para qualquer programador que deseja escrever código com menos bugs e mais facilidade de manutenção.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/livros/flores_para_algernon.jpg" alt=""  class="db-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Flores para Algernon – Daniel Keyes
+                        </h3>
+                        <p>
+                            Este romance mistura ficção científica com profundas reflexões sobre a mente humana. O diferencial está no uso de uma narrativa introspectiva para explorar questões de inteligência, empatia e o que significa ser humano, com uma sensibilidade tocante. A evolução e a regressão do protagonista desafiam o leitor a refletir sobre os limites da ciência e a ética.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/livros/2001_uma_odisseia_no_espaco.jpg" alt=""  class="db-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            2001: Uma Odisseia no Espaço – Arthur C. Clarke
+                        </h3>
+                        <p>
+                            Além de ser um marco na ficção científica, este livro combina uma trama espacial épica com conceitos filosóficos profundos sobre a evolução da humanidade, inteligência artificial e o futuro da vida. É uma obra atemporal, que provocou uma reinterpretação da relação entre humanos e tecnologia, destacando-se por seu realismo científico e amplitude de ideias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="categorias" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        <span class="text-colored">Categorias</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-categorias">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#classicos-ficcao-cientifica" class="fw-bold text-start nav-link active text-colored">Clássicos de Ficção Científica</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fantasia-epica" class="fw-bold text-start nav-link text-colored">Fantasia Épica</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#romances-reflexivos" class="fw-bold text-start nav-link text-colored">Romances Reflexivos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#suspense-e-horror" class="fw-bold text-start nav-link text-colored">Suspense e Horror</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#desenvolvimento-e-carreira" class="fw-bold text-start nav-link text-colored">Livros de Desenvolvimento e Carreira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filosofia-e-conhecimento" class="fw-bold text-start nav-link text-colored">Filosofia e Conhecimento</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="classicos-ficcao-cientifica">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/livros/eu_robo.jpg" alt="Eu, Robô – Isaac Asimov"/>
+                                        <h5 class="text-colored fw-bold mt-2">Eu, Robô – Isaac Asimov</h5>
+                                        <p>
+                                            Esta obra explora a relação entre humanos e robôs através de uma série de contos interligados. Asimov introduz suas famosas "Leis da Robótica" e utiliza a ficção científica para levantar questões filosóficas sobre moralidade, inteligência artificial e o futuro da humanidade.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/livros/fundacao.jpg" alt="Fundação – Isaac Asimov"/>
+                                        <h5 class="text-colored fw-bold mt-2">Fundação – Isaac Asimov</h5>
+                                        <p>
+                                            O primeiro livro da trilogia Fundação apresenta a visão ambiciosa do cientista Hari Seldon, que desenvolve a psico-história, uma ciência capaz de prever o futuro em larga escala. Prevendo a queda inevitável do vasto Império Galáctico, Seldon cria a Fundação, uma organização dedicada a preservar o conhecimento da humanidade e acelerar a recuperação da civilização. O livro explora a luta pela sobrevivência da Fundação em meio ao caos galáctico, com foco em política, ciência e a manipulação do destino.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/livros/fundacao_e_imperio.jpg" alt="Fundação e Império – Isaac Asimov"/>
+                                        <h5 class="text-colored fw-bold mt-2">Fundação e Império – Isaac Asimov</h5>
+                                        <p>
+                                            No segundo volume, a Fundação começa a consolidar sua posição de poder enquanto enfrenta o declínio do Império Galáctico. Porém, um novo inimigo surge: o Mulo, um mutante imprevisível cujas ações fogem às previsões da psico-história de Seldon. Fundação e Império aprofunda os conflitos entre a razão e o imprevisto, trazendo reviravoltas que desafiam o futuro da Fundação e de toda a galáxia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/livros/segunda_fundacao.jpg" alt="Segunda Fundação – Isaac Asimov"/>
+                                        <h5 class="text-colored fw-bold mt-2">Segunda Fundação – Isaac Asimov</h5>
+                                        <p>
+                                            No desfecho da trilogia, a busca pelo misterioso e oculto braço da Fundação – a Segunda Fundação – toma o centro da trama. Esta organização secreta, criada por Seldon, tem a missão de garantir o plano original de reconstrução da civilização. Enquanto o Mulo busca destruir a Segunda Fundação para consolidar seu poder, as duas fundações se envolvem em um jogo de inteligência e estratégia que definirá o futuro da galáxia.
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="fantasia-epica">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/livros/a_sociedade_do_anel.jpg" alt="A Sociedade do Anel – J.R.R. Tolkien"/>
+                                    <h5 class="text-colored fw-bold mt-2">A Sociedade do Anel – J.R.R. Tolkien</h5>
+                                    <p>
+                                        A primeira parte da trilogia "O Senhor dos Anéis" apresenta a jornada de Frodo Bolseiro, que recebe a missão de destruir o Um Anel e evitar que Sauron conquiste a Terra Média. Com sua construção de mundo rica e detalhada, esta obra é um pilar da fantasia moderna.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/livros/as_duas_torres.jpg" alt="As Duas Torres – J.R.R. Tolkien"/>
+                                    <h5 class="text-colored fw-bold mt-2">As Duas Torres – J.R.R. Tolkien</h5>
+                                    <p>
+                                        Nesta segunda parte da trilogia, a sociedade que busca destruir o Anel é separada, e acompanhamos as lutas individuais de seus membros. Enquanto Frodo e Sam se aproximam de Mordor, outros personagens enfrentam batalhas épicas e alianças inesperadas.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="images/livros/as_cronicas_de_gelo_e_fogo.jpg" alt="As Crônicas de Gelo e Fogo – George R. R. Martin"/>
+                                    <h5 class="text-colored fw-bold mt-2">As Crônicas de Gelo e Fogo – George R. R. Martin</h5>
+                                    <p>
+                                        Um épico de fantasia que narra a luta pelo poder em Westeros, onde famílias nobres conspiram para controlar o trono de ferro. A história se destaca por suas personagens complexas, traições inesperadas e batalhas épicas, misturando fantasia medieval com uma abordagem realista e brutal da política.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="romances-reflexivos">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/a_metamorfose.jpg" alt="A Metamorfose – Franz Kafka"/>
+                                <h5 class="text-colored fw-bold mt-2">A Metamorfose – Franz Kafka</h5>
+                                <p>
+                                    Gregor Samsa, um vendedor, acorda um dia transformado em um inseto gigante. O livro explora o isolamento, a alienação e o colapso das relações familiares sob o peso dessa transformação. É uma das obras mais marcantes de Kafka, oferecendo uma reflexão única sobre a condição humana.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/a_morte_de_ivan_ilitch.jpg" alt="A Morte de Ivan Ilitch – Liev Tolstói"/>
+                                <h5 class="text-colored fw-bold mt-2">A Morte de Ivan Ilitch – Liev Tolstói</h5>
+                                <p>
+                                    A história segue Ivan Ilitch, um juiz de classe média, que, ao adoecer terminalmente, começa a questionar o sentido de sua vida. Tolstói nos apresenta uma profunda reflexão sobre a mortalidade, o arrependimento e a busca pelo verdadeiro significado da existência.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/o_retrato_de_dorian_gray.jpg" alt="O Retrato de Dorian Gray – Oscar Wilde"/>
+                                <h5 class="text-colored fw-bold mt-2">O Retrato de Dorian Gray – Oscar Wilde</h5>
+                                <p>
+                                    Dorian Gray é um jovem que, ao ter seu retrato pintado, faz um pacto para manter sua juventude enquanto o retrato envelhece em seu lugar. Wilde examina o hedonismo, a moralidade e as consequências da busca insaciável pelo prazer e pela beleza.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="suspense-e-horror">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/o_iluminado.jpg" alt="O Iluminado – Stephen King"/>
+                                <h5 class="text-colored fw-bold mt-2">O Iluminado – Stephen King</h5>
+                                <p>
+                                    Um romance de terror psicológico, onde Jack Torrance, um escritor frustrado, aceita trabalhar em um hotel isolado nas montanhas durante o inverno. À medida que o hotel influencia sua mente, ele se torna uma ameaça para sua própria família. King explora temas de loucura, isolamento e forças sobrenaturais de maneira perturbadora.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/o_fantasma_de_canterville.jpg" alt="O Fantasma de Canterville – Oscar Wilde"/>
+                                <h5 class="text-colored fw-bold mt-2">O Fantasma de Canterville – Oscar Wilde</h5>
+                                <p>
+                                    Esta novela mistura humor e sobrenatural, contando a história de uma família americana que se muda para uma antiga mansão inglesa assombrada por um fantasma. Em vez de se assustar, a família trata o fantasma com irreverência, oferecendo uma abordagem cômica às histórias tradicionais de assombrações.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="desenvolvimento-e-carreira">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/aprendendo_inteligencia.jpg" alt="Aprendendo Inteligência – Pierluigi Piazzi"/>
+                                <h5 class="text-colored fw-bold mt-2">Aprendendo Inteligência – Pierluigi Piazzi</h5>
+                                <p>
+                                    Este livro oferece uma abordagem prática para o desenvolvimento da inteligência através de técnicas de estudo e aprendizado eficiente. Piazzi enfatiza a importância de pensar criticamente e de forma autônoma para atingir o sucesso acadêmico e profissional.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/inteligencia_em_concursos.jpg" alt="Inteligência em Concursos – Pierluigi Piazzi"/>
+                                <h5 class="text-colored fw-bold mt-2">Inteligência em Concursos – Pierluigi Piazzi</h5>
+                                <p>
+                                    O autor foca em desenvolver a inteligência por meio de técnicas de estudo diferenciadas, que estimulam o raciocínio lógico, a autonomia e a disciplina. Ao invés de decorar conteúdos, Piazzi sugere uma abordagem que privilegia a compreensão profunda e a prática constante, ajudando os concurseiros a alcançarem um desempenho de alta qualidade nos exames.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/O_programador_pragmatico.jpg" alt="O Programador Pragmático – Andrew Hunt e David Thomas"/>
+                                <h5 class="text-colored fw-bold mt-2">O Programador Pragmático – Andrew Hunt e David Thomas</h5>
+                                <p>
+                                    Este é um manual para desenvolvedores que buscam melhorar continuamente suas habilidades. Os autores apresentam práticas pragmáticas que ajudam a resolver problemas complexos e a escrever código mais eficiente e escalável.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/java_para_iniciantes.jpg" alt="Java para Iniciantes – Herbert Schildt"/>
+                                <h5 class="text-colored fw-bold mt-2">Java para Iniciantes – Herbert Schildt</h5>
+                                <p>
+                                    Um livro que fornece uma introdução clara e abrangente à linguagem de programação Java. Ele ensina desde os fundamentos da sintaxe até conceitos mais avançados, sendo ideal para quem está começando na programação.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="filosofia-e-conhecimento">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/o_mundo_de_sofia.jpg" alt="O Mundo de Sofia – Jostein Gaarder"/>
+                                <h5 class="text-colored fw-bold mt-2">O Mundo de Sofia – Jostein Gaarder</h5>
+                                <p>
+                                    Um romance filosófico que segue Sofia, uma jovem que recebe cartas misteriosas contendo lições sobre a história da filosofia. O livro funciona como uma introdução acessível a ideias filosóficas de diversos períodos, explorando questões profundas de forma envolvente.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/outlive.jpg" alt="Outlive – Peter Attia"/>
+                                <h5 class="text-colored fw-bold mt-2">Outlive – Peter Attia</h5>
+                                <p>
+                                    Um livro focado em longevidade e bem-estar, onde o autor discute como os avanços da ciência podem ajudar as pessoas a viverem mais e melhor. Ele explora a prevenção de doenças e a manutenção de uma boa qualidade de vida por mais tempo.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="images/livros/as_cronicas_de_gelo_e_fogo.jpg" alt="As Crônicas de Gelo e Fogo – George R. R. Martin"/>
+                                <h5 class="text-colored fw-bold mt-2">As Crônicas de Gelo e Fogo – George R. R. Martin</h5>
+                                <p>
+                                    Um épico de fantasia que narra a luta pelo poder em Westeros, onde famílias nobres conspiram para controlar o trono de ferro. A história se destaca por suas personagens complexas, traições inesperadas e batalhas épicas, misturando fantasia medieval com uma abordagem realista e brutal da política.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-comigo">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">comigo</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="tel" name="tel" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua dos Bobos nº 0, Bairro Jardim dos Bobos - Bobolândia - BL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- jQuery-->
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+     <!-- jQuery Mask-->
+     <script src="libs/jquery.mask.min.js"></script>
+     <!-- jQuery Validate -->
+     <script src="libs/jquery.validate.min.js"></script>
+     <script src="libs/messages_pt_BR.min.js"></script>
+     <!-- JavaScript -->
+     <script src="main.js"></script>
+</body>
+</html>

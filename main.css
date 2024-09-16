@@ -1,0 +1,78 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background-color: #4858c0;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: white;
+    color: #5a54aa;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-categorias .nav-link.active:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: #e6e9ff;
+}
+
+.section-title{
+    font-family: Pacifico, cursive;
+}
+
+#mais-recente,
+#categorias{
+    background-color: #e6e9ff;
+}
+
+.text-colored{
+    color: #5a54aa;
+}
+
+.nav-categorias .nav-link.active,
+#fale-comigo button{
+    background-color: #4c41e1d5;
+    color: white;
+}
+
+.nav-categorias .nav-link:hover{
+    color: #5941e1c5;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    border-radius: 50%; /* Deixa os ícones arredondados */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+}
+
+@media(max-width: 767px){
+    .carousel-item img{
+        height: 280px;
+    }
+}
+
+.error {
+    color: rgb(199, 32, 32);
+}
+
+.carousel-item img {
+    height: 550px;
+    object-fit: cover; /* Para garantir que a imagem cubra o espaço sem distorção */
+}
